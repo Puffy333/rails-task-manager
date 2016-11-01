@@ -1,0 +1,10 @@
+<h1>Pages#index</h1>
+<p>Find me in app/views/pages/index.html.erb</p>
+<% @tasks.each do |task| %>
+  <h2><%= task.name%></h2>
+  <p>
+    <%= link_to 'Edit', edit_path(task)%>
+    <%= link_to 'Delete', task_path(task), method: :delete, data: { confirm: 'You sure?'} %>
+  </p>
+<% end %>
+<%= link_to 'New Task', update_path%>

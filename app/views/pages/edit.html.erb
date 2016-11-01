@@ -1,0 +1,15 @@
+<h1>Pages#edit</h1>
+<p>Find me in app/views/pages/edit.html.erb</p>
+
+<%= form_for(@tasks) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
+
+<!--<form action="/tasks" method="post">
+  <label for="task">New Task:</label>
+  <input type="text" name="task[name]" id="task">
+  <input type="submit">
+</form>-->
